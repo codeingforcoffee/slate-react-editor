@@ -1,0 +1,222 @@
+/* ─── Container ─────────────────────────────────────────────────────────────── */
+
+.sre-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111827;
+  background: #ffffff;
+}
+
+/* ─── Editor Wrapper ────────────────────────────────────────────────────────── */
+
+.sre-editor-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* ─── Toolbar ───────────────────────────────────────────────────────────────── */
+
+.sre-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 8px;
+  border-bottom: 1px solid #d1d5db;
+  background: #f9fafb;
+}
+
+.sre-toolbar-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 28px;
+  padding: 0 6px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: #374151;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s, color 0.1s;
+  user-select: none;
+}
+
+.sre-toolbar-btn:hover {
+  background: #e5e7eb;
+  border-color: #d1d5db;
+}
+
+.sre-toolbar-btn--active {
+  background: #dbeafe;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}
+
+.sre-toolbar-btn--active:hover {
+  background: #bfdbfe;
+}
+
+.sre-toolbar-divider {
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background: #d1d5db;
+  margin: 0 4px;
+}
+
+/* ─── Editable Area ─────────────────────────────────────────────────────────── */
+
+.sre-editable {
+  flex: 1;
+  padding: 16px 20px;
+  min-height: 200px;
+  outline: none;
+  overflow-y: auto;
+}
+
+.sre-editable:focus {
+  outline: none;
+}
+
+/* ─── Block Elements ────────────────────────────────────────────────────────── */
+
+.sre-paragraph {
+  margin: 0 0 8px 0;
+}
+
+.sre-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.sre-heading {
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 16px 0 8px 0;
+  color: #111827;
+}
+
+.sre-heading:first-child {
+  margin-top: 0;
+}
+
+.sre-heading-1 {
+  font-size: 1.75em;
+}
+
+.sre-heading-2 {
+  font-size: 1.375em;
+}
+
+.sre-heading-3 {
+  font-size: 1.125em;
+}
+
+.sre-blockquote {
+  margin: 8px 0;
+  padding: 8px 16px;
+  border-left: 4px solid #d1d5db;
+  background: #f9fafb;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* ─── Inline Code ───────────────────────────────────────────────────────────── */
+
+.sre-inline-code {
+  font-family: "Fira Code", "Cascadia Code", "JetBrains Mono", Consolas, "Courier New",
+    monospace;
+  font-size: 0.875em;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+  padding: 1px 5px;
+  color: #dc2626;
+}
+
+/* ─── Code Block ────────────────────────────────────────────────────────────── */
+
+.sre-code-block {
+  margin: 8px 0;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #1e1e1e;
+}
+
+.sre-code-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  background: #2d2d2d;
+  border-bottom: 1px solid #374151;
+  user-select: none;
+}
+
+.sre-code-block-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sre-language-select {
+  font-size: 12px;
+  font-family: inherit;
+  color: #d1d5db;
+  background: #374151;
+  border: 1px solid #4b5563;
+  border-radius: 4px;
+  padding: 2px 6px;
+  cursor: pointer;
+  outline: none;
+}
+
+.sre-language-select:focus {
+  border-color: #6b7280;
+}
+
+.sre-language-select option {
+  background: #374151;
+  color: #d1d5db;
+}
+
+.sre-code-block-pre {
+  margin: 0;
+  padding: 12px 16px;
+  overflow-x: auto;
+  font-family: "Fira Code", "Cascadia Code", "JetBrains Mono", Consolas, "Courier New",
+    monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.sre-code-block-code {
+  display: block;
+  color: #d4d4d4;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.sre-code-line {
+  display: block;
+  min-height: 1.6em;
+}
+
+/* Keep empty lines from collapsing */
+.sre-code-line:empty::after {
+  content: "\200B";
+}

@@ -1,0 +1,159 @@
+/**
+ * Prism syntax highlighting theme — VS Code Dark+ inspired
+ *
+ * Token classes applied inside .sre-code-block .sre-code-block-code
+ */
+
+/* ─── Base ──────────────────────────────────────────────────────────────────── */
+
+.sre-code-block .token {
+  color: #d4d4d4;
+}
+
+/* ─── Comments ──────────────────────────────────────────────────────────────── */
+
+.sre-code-block .token.comment,
+.sre-code-block .token.prolog,
+.sre-code-block .token.doctype,
+.sre-code-block .token.cdata {
+  color: #6a9955;
+  font-style: italic;
+}
+
+/* ─── Punctuation ───────────────────────────────────────────────────────────── */
+
+.sre-code-block .token.punctuation {
+  color: #d4d4d4;
+}
+
+/* ─── Namespace ─────────────────────────────────────────────────────────────── */
+
+.sre-code-block .token.namespace {
+  opacity: 0.7;
+}
+
+/* ─── Properties & Tags ─────────────────────────────────────────────────────── */
+
+.sre-code-block .token.property,
+.sre-code-block .token.tag,
+.sre-code-block .token.boolean,
+.sre-code-block .token.constant,
+.sre-code-block .token.symbol,
+.sre-code-block .token.deleted {
+  color: #9cdcfe;
+}
+
+/* ─── Numbers ───────────────────────────────────────────────────────────────── */
+
+.sre-code-block .token.number {
+  color: #b5cea8;
+}
+
+/* ─── Selectors & Attributes ────────────────────────────────────────────────── */
+
+.sre-code-block .token.selector,
+.sre-code-block .token.attr-name,
+.sre-code-block .token.string,
+.sre-code-block .token.char,
+.sre-code-block .token.builtin,
+.sre-code-block .token.inserted {
+  color: #ce9178;
+}
+
+/* ─── Operators & Entities ──────────────────────────────────────────────────── */
+
+.sre-code-block .token.operator,
+.sre-code-block .token.entity,
+.sre-code-block .token.url {
+  color: #d4d4d4;
+}
+
+/* ─── CSS Variables ─────────────────────────────────────────────────────────── */
+
+.sre-code-block .language-css .token.string,
+.sre-code-block .style .token.string {
+  color: #ce9178;
+}
+
+/* ─── Atrule & Attr Value ───────────────────────────────────────────────────── */
+
+.sre-code-block .token.atrule,
+.sre-code-block .token.attr-value {
+  color: #ce9178;
+}
+
+/* ─── Keywords ──────────────────────────────────────────────────────────────── */
+
+.sre-code-block .token.keyword {
+  color: #569cd6;
+}
+
+/* ─── Function Keywords ─────────────────────────────────────────────────────── */
+
+.sre-code-block .token.keyword.keyword-function {
+  color: #dcdcaa;
+}
+
+/* ─── Functions ─────────────────────────────────────────────────────────────── */
+
+.sre-code-block .token.function {
+  color: #dcdcaa;
+}
+
+/* ─── Regex & Important ─────────────────────────────────────────────────────── */
+
+.sre-code-block .token.regex,
+.sre-code-block .token.important,
+.sre-code-block .token.variable {
+  color: #d16969;
+}
+
+/* ─── Class Names & Types ───────────────────────────────────────────────────── */
+
+.sre-code-block .token.class-name,
+.sre-code-block .token.maybe-class-name {
+  color: #4ec9b0;
+}
+
+/* ─── Parameters ────────────────────────────────────────────────────────────── */
+
+.sre-code-block .token.parameter {
+  color: #9cdcfe;
+}
+
+/* ─── Template Literals ─────────────────────────────────────────────────────── */
+
+.sre-code-block .token.template-string,
+.sre-code-block .token.template-punctuation {
+  color: #ce9178;
+}
+
+/* ─── Important & Bold ──────────────────────────────────────────────────────── */
+
+.sre-code-block .token.important,
+.sre-code-block .token.bold {
+  font-weight: bold;
+}
+
+.sre-code-block .token.italic {
+  font-style: italic;
+}
+
+.sre-code-block .token.entity {
+  cursor: help;
+}
+
+/* ─── Markup / HTML ─────────────────────────────────────────────────────────── */
+
+.sre-code-block .token.tag .token.tag,
+.sre-code-block .token.tag .punctuation {
+  color: #808080;
+}
+
+.sre-code-block .token.attr-name {
+  color: #9cdcfe;
+}
+
+.sre-code-block .token.attr-value {
+  color: #ce9178;
+}
